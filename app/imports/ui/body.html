@@ -1,0 +1,30 @@
+<body>
+<div class="page-header" style="margin-left: 10px;">
+    <h1>Cool Video <small>Watch video and pay with your CVC tokens!</small></h1>
+</div>
+{{> navbar}}
+{{#if startState}}
+    {{> welcome}}
+{{/if}}
+{{#if checkBalanceState}}
+    {{> checkBalance}}
+{{/if}}
+{{#if requestTokensState}}
+    {{> requestTokens}}
+{{/if}}
+{{#if approveTokensState}}
+    {{> approveTokens}}
+{{/if}}
+{{#if startSessionState}}
+    {{> startSession}}
+{{/if}}
+{{#if watchContentState}}
+    {{> watchContent}}
+{{/if}}
+{{#if finishSessionState}}
+    {{> finishSession}}
+{{/if}}
+{{#if claimTokensState}}
+    {{> claimTokens}}
+{{/if}}
+</body>

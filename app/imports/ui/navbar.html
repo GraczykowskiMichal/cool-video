@@ -1,0 +1,55 @@
+<template name="navbar">
+    <nav class="navbar navbar-default" style="margin-left: 10px; margin-right: 10px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand" style="margin-top: 10px;">Choose your action:</p>
+            </div>
+            <div class="collapse navbar-collapse" style="margin-top: 10px;">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <button type="button" class="{{#if checkBalanceState}}btn-success{{/if}} btn btn-default navbar-btn check-balance" style="margin-left: 10px; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-inbox"></span>
+                            Check CVC balance
+                        </button>
+                    </li>
+                    <li class="active">
+                        <button type="button" class="{{#if requestTokensState}}btn-success{{/if}} btn btn-default navbar-btn request-tokens" style="margin-left: 10px; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            Request CVC tokens
+                        </button>
+                    </li>
+                    <li class="active">
+                        <button type="button" class="{{#if approveTokensState}}btn-success{{/if}} btn btn-default navbar-btn approve-tokens" style="margin-left: 10px; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            Approve tokens
+                        </button>
+                    </li>
+                    <li class="active">
+                        <button type="button" class="{{#if startSessionState}}btn-success{{/if}} btn btn-default navbar-btn start-session" style="margin-left: 10px; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            Start session
+                        </button>
+                    </li>
+                    <li class="active">
+                        <button type="button" class="{{#if watchContentState}}btn-success{{/if}} btn btn-default navbar-btn watch-content" style="margin-left: 10px; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-hd-video"></span>
+                            Watch content
+                        </button>
+                    </li>
+                    <li class="active">
+                        <button type="button" class="{{#if finishSessionState}}btn-success{{/if}} btn btn-default navbar-btn finish-session" style="margin-left: 10px; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            Finish session
+                        </button>
+                    </li>
+                    <li class="active">
+                        <button type="button" class="{{#if claimTokensState}}btn-success{{/if}} btn btn-default navbar-btn claim-tokens" style="margin-left: 10px; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-piggy-bank"></span>
+                            Claim tokens
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</template>
