@@ -13,7 +13,6 @@ const signer = process.argv[3];
 const msgValueStr = value.toString();
 const h = web3.utils.soliditySha3({type: "uint256", value: msgValueStr});
 const { BN } = web3.utils;
-// signer = "0x5916b11a169bff6cca02901500d514564b0f95e6";
 web3.eth.sign(h, signer, function(error, signed) {
 	if (error) {
 		console.log(error);
